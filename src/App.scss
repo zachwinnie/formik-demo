@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  color: #333;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.check {
+  flex-shrink: 0;
+  margin: 4px 0 0;
+}
+
+.checkbox {
+  display: flex;
+
+  > .label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 5px 0 0;
+}
+
+.form {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  max-width: 300px;
+  padding: 30px;
+  width: 100%;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.h1 {
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 0 0 15px;
+}
+
+.input {
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  margin: 0 0 5px;
+}
+
+.p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 15px;
+}
+
+.page {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.radio-group {
+  font-size: 14px;
+}
+
+.radios {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0 0;
+
+  > .label {
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 10px 0 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+.radio {
+  margin: 0 5px 0 0;
+}
+
+.showPassword {
+  background-color: transparent;
+  border: 0;
+  color: #555;
+  margin: 10px 0 0;
+  outline: 0;
+  padding: 0;
+
+  &:focus,
+  &:hover {
+    color: #888;
+  }
+}
+
+.submit {
+  background-color: navy;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 5px 0 0;
+  padding: 10px 15px;
+
+  &:focus,
+  &:hover {
+    background-color: blue;
+  }
+
+  &:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+  }
+}
